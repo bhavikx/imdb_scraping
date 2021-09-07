@@ -15,7 +15,7 @@ movie_name = [i.get_text() for i in html.select('td.titleColumn a')]
 ratings = [i.get_text() for i in html.select('td.ratingColumn strong')]
 year = [i.get_text() for i in html.select('td.titleColumn span')]
 
-href = ["https://m.imdb.com"+i.attrs.get('href') for i in html.select('td.posterColumn a')]
+href = ["https://m.imdb.com" + i.attrs.get('href') for i in html.select('td.posterColumn a')]
 
 moviesd = {'movie':[], 'year':[], 'runtime':[], 'ratings':[], 'description':[]}
 
